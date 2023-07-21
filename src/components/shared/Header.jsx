@@ -9,8 +9,6 @@ export default function Header() {
   const navigate = useNavigate()
   const location = useLocation();
 
-
-
   return (
     <div className='bg-[#F2F2F3] h-20 flex justify-between items-center border-b border-gray-200 pt-6 pb-6'>
       <div className='text-black font-bold text-3xl ml-5'>
