@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import notificationIcon from './Notifications.svg';
+import notificationIcon from '../assests/Notifications.svg';
 import { Menu, Popover, Transition } from '@headlessui/react'
 import { useNavigate, useLocation  } from 'react-router-dom'
 import classNames from 'classnames'

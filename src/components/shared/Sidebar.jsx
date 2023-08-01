@@ -1,7 +1,7 @@
 import React from 'react'
 import { DASHBOARD_SIDEBAR_LINKS,
   DASHBOARD_SIDEBAR_BOTTOM_LINKS } from '../../libs/consts/navigation'
-import logo from './Logo.svg';
+import logo from '../assests/Logo.svg';
 import { Link, useLocation } from 'react-router-dom';
 import classNames from 'classnames'
 

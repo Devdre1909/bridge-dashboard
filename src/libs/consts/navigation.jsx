@@ -1,8 +1,8 @@
-import applicationIcon from './application-icon.svg';
-import applicationIcon2 from './application-icon2.svg';
-import settingIcon from './setting-icon.svg';
-import settingIcon2 from './setting-icon2.svg';
-import logoutIcon from './logout-icon.svg';
+import applicationIcon from '../../components/assests/application-icon2.svg';
+import applicationIcon2 from '../../components/assests/application-icon2.svg';
+import settingIcon from '../../components/assests/setting-icon.svg';
+import settingIcon2 from '../../components/assests/setting-icon2.svg';
+import logoutIcon from '../../components/assests/logout-icon.svg';
 
 
 export const DASHBOARD_SIDEBAR_LINKS = [
