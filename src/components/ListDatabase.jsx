@@ -9,7 +9,7 @@ import application_options_icon from '../components/assests/application_options_
 import { ApolloClient, InMemoryCache, ApolloProvider, useQuery, gql } from '@apollo/client';
 import { API_BASE_URL, TEST_TOKEN, } from '../libs/consts';
 import {
- formatDate, 
+  formatDate,
   ToastSuccessMessage, ToastErrorMessage,
 } from '../libs/utils'
 import AddDatabasePanel from './AddDatabasePanel';
@@ -95,14 +95,14 @@ function DatabaseHeader({ application_id }) {
 
 function DatabaseBody({ databaseData, index }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDrawerOpen, setIsDrawerOpen] = useState(null);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const drawerRef = useRef(null);
   const [isError, setIsError] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
   const handleEditButtonClick = () => {
     setIsOpen(false)
-    setIsDrawerOpen(true);
+    setIsDrawerOpen(!isDrawerOpen);
   };
 
   const handleClosePanel = () => {
@@ -188,20 +188,20 @@ function DatabaseBody({ databaseData, index }) {
             <img src={application_options_icon} alt='application options icon' />
           </button>
           {isOpen && (
-            <div 
+            <div
               className="absolute right-0 z-10 bg-white mr-6 mt-3 rounded-lg"
               style={{
                 top: buttonRef.current.offsetHeight,
               }}
             >
-              <div  className=''>
+              <div className=''>
                 <div className='flex gap-2 p-2 pr-8  text-gray-800 hover:bg-gray-200 cursor-pointer'>
                   <img src={folder_open} alt='folder open icon' />
                   <button>Open</button>
                 </div>
-                <div className='flex gap-2 p-2 pr-8 text-gray-800 hover:bg-gray-200 cursor-pointer'>
+                <div className='flex gap-2 p-2 pr-8 text-gray-800 hover:bg-gray-200 cursor-pointer' onClick={handleEditButtonClick}>
                   <img src={edit_icon} alt='edit icon' />
-                  <button onClick={handleEditButtonClick}>Edit</button>
+                  <button>Edit</button>
                 </div>
                 <div className='flex gap-2 p-2 pr-8 text-gray-800 hover:bg-gray-200 cursor-pointer'>
                   <img src={info_icon} alt='info icon' />
@@ -215,7 +215,7 @@ function DatabaseBody({ databaseData, index }) {
             </div>
           )}
           {isDrawerOpen && (
-            <AddDatabasePanel
+            <AddDatabasePanel // TODO: populate input fields with existing values
               handleClosePanel={handleClosePanel}
               onFinalSubmitAction={handleFormSubmit}
             />
@@ -225,7 +225,7 @@ function DatabaseBody({ databaseData, index }) {
       </div>
       {isError && <ToastErrorMessage variable={'Error occured!'} />}
       {isSuccess && <ToastSuccessMessage variable={'Done!'} />}
-      
+
     </div>
   );
 }

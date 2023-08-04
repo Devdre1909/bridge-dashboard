@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# QueryBridge Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+QueryBridge Frontend is the frontend application for the QueryBridge dashboard. It provides an intuitive and user-friendly interface for managing database connections, creating custom endpoints, and interacting with the connected databases using the QueryBridge backend API.
 
-## Available Scripts
+![Project Logo](Logo.png) 
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [QueryBridge Dashboard](#querybridge-dashboard)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Backend API](#backend-api)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Design](#design)
+  - [Contributing](#contributing)
+  - [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The QueryBridge Frontend is built using React and styled with Tailwind CSS. It is designed to complement the backend by providing an accessible and visually appealing dashboard for users to manage their database connections and create custom endpoints effortlessly.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **User Authentication**: Secure login and registration system for authenticated access.
+- **Dashboard Overview**: An overview of user applications and their associated database connections.
+- **Database Connections**: Easily add, edit, and delete database connections.
+- **Endpoint Management**: Create, update, and remove custom endpoints for connected databases.
+- **Real-time Activity Logs**: View real-time logs of database interactions and endpoint activities.
+- **Private and Public Endpoints**: Declare endpoints as private or public for additional security.
 
-### `npm run build`
+## Backend API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The QueryBridge Frontend interacts with the QueryBridge Backend API to perform various operations, including database connection setup, endpoint creation, and activity logging. Ensure that the backend API is set up and running before using the frontend. See information about the backend [here](https://github.com/ShowBaba/bridge-core.git)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the frontend repository to your local machine: `git clone https://github.com/ShowBaba/bridge-dashboard.git`.
+2. Navigate to the project directory: `cd querybridge-dashboard`.
+3. Install the required dependencies: `yarn`.
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Start the frontend development server: `yarn start`.
+2. Access the frontend dashboard in your browser at [http://localhost:3000](http://localhost:3000).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The design for the QueryBridge Frontend is available on Figma. You can view the design [here](https://www.figma.com/file/25wQoBo8shPdxays5XiDSg/query-bridge?type=design&node-id=66%3A9321&mode=design&t=LXIppltNrnTZnHSm-1).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- ![Dashboard Screenshot](dashboard_screenshot.png)  -->
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+We welcome contributions to the QueryBridge Frontend! Whether it's bug fixes, new features, or improvements to documentation, we value your input. To contribute, follow these steps:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Fork the repository to your GitHub account.
+2. Clone your forked repository to your local machine.
+3. Create a new branch for your changes: `git checkout -b feature/new-feature` or `fix/issue-description`.
+4. Make your modifications and commit your changes: `git commit -m "Description of changes"`.
+5. Push your changes to your GitHub repository: `git push origin feature/new-feature`.
+6. Open a pull request against the `main` branch of this repository.
+7. Ensure your pull request follows the project's coding guidelines and passes any automated tests.
 
-### Code Splitting
+Please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information on contributing guidelines and code formatting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+QueryBridge Frontend is released under the [MIT License](LICENSE). See the `LICENSE` file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
